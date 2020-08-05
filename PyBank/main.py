@@ -1,6 +1,3 @@
-###The total number of months included in the dataset
-
-    #print(f'Total Months : {TotalMonths}')
 
 import os
 import csv
@@ -62,7 +59,7 @@ print(f'Greatest Decrease in Profits: {monthDecrease} (${greatestIncrease})')
 
 # Output to a text file
 
-out_path = os.path.join("Financial_Analysis.txt")
+out_path = os.path.join("Analysis","Financial_Analysis.txt")
 
 with open (out_path, "w", newline = '') as txtfile:
     txtfile.write(f'Financial Analysis' + '\n')
@@ -72,27 +69,4 @@ with open (out_path, "w", newline = '') as txtfile:
     txtfile.write(f'Average Change: {average_changes}\n')
     txtfile.write(f'Greatest Increase in Profits: {monthIncrease} (${greatestDecrease})\n')
     txtfile.write(f'Greatest Decrease in Profits: {monthDecrease} (${greatestIncrease})\n')
-
-
-###The net total amount of "Profit/Losses" over the entire period 
-    #
-    #currentProfit/loss (item[1])
-    #total = current profit loss + total
-    #print(f'Total: $ {Total}')
-###The average of the changes in "Profit/Losses" over the entire period
-    #monthlyChange =[]
-    #previousMonth = 0.00
-    #previousMonth = currentMonth 
-    #append currentMonth - previousMonth to monthlyChange ^
-    
-
-###The greatest increase in profits (date and amount) over the entire period
-    #greatestIncrease ={}
-    #print(f'Greatest Increase in Profits: )
-
-
-###The greatest decrease in losses (date and amount) over the entire period
-    #print(f'Greatest Decrease in Profits: )    
-
-
-
+ 
