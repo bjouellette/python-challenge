@@ -1,4 +1,4 @@
-
+ 
 import os
 import csv
 
@@ -52,8 +52,8 @@ average_changes = round(Totalchange/(TotalMonths-1),2)
 print(f'Financial Analysis' + '\n')
 print(f'---------------------------' + '\n')
 print(f'Total Months: {TotalMonths}')
-print(f'Total: {Total_net}')
-print(f'Average Change: {average_changes}')
+print(f'Total: ${Total_net}')
+print(f'Average Change: ${average_changes}')
 print(f'Greatest Increase in Profits: {monthIncrease} (${greatestDecrease})')
 print(f'Greatest Decrease in Profits: {monthDecrease} (${greatestIncrease})')
 
@@ -65,8 +65,8 @@ with open (out_path, "w", newline = '') as txtfile:
     txtfile.write(f'Financial Analysis' + '\n')
     txtfile.write(f'---------------------------' + '\n')
     txtfile.write(f'Total Months: {TotalMonths}\n')
-    txtfile.write(f'Total: {Total_net}\n')
-    txtfile.write(f'Average Change: {average_changes}\n')
+    txtfile.write(f'Total: ${Total_net}\n')
+    txtfile.write(f'Average Change: ${average_changes}\n')
     txtfile.write(f'Greatest Increase in Profits: {monthIncrease} (${greatestDecrease})\n')
     txtfile.write(f'Greatest Decrease in Profits: {monthDecrease} (${greatestIncrease})\n')
  
